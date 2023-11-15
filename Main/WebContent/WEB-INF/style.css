@@ -1,0 +1,301 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    line-height: 1.5;
+      background: radial-gradient(circle, #1c92d2, #f2fcfe);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #007BFF, #00C9FF);
+    color: #f7f3f3;
+    padding: 15px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.Title {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 0 #999, 2px 2px 0 #888;
+    
+}
+
+.titleofcontent {
+    font-size: 36px; /* Adjust this value to your preferred size */
+    font-family: 'Varela Round', sans-serif;
+
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 0 #999, 2px 2px 0 #888;
+}
+
+
+.top-right {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #f7f3f3;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 15px;
+}
+
+button:hover {
+    background-color: #005BDF;
+}
+
+.search-bar {
+    width: 80%;
+    margin: 20px auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    height: 25px;  /* increased height */
+    font-size: 14px;  /* increased font size */
+    
+    margin-right: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+.main-content {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+table {
+    background-color: white;
+    margin-top: 20px;
+    margin: 20px auto;
+    margin-right: 0px; /* adjust the 30px to whatever offset you'd like */
+    max-width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    word-wrap: break-word;
+}
+
+
+
+.side-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+}
+.common-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 200px; /* Set the width here */
+}
+
+.post-section {
+    width: 300px;         /* Increase the width for a wider section */
+    font-size: 34px;      /* Increase the font size */
+    padding: 20px;        /* Increase padding for more space around the content */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.live-time-container {
+    margin-top: 500px;
+}
+
+.live-time-box {
+    width: 200px;
+    font-size: 38px;
+    padding: 15px;
+    background-color: #007BFF;
+    color: #f7f3f3;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 50px; /* Add this to move it downward */
+}
+.live-time-box_2 {
+    width: 200px;
+    font-size: 38px;
+    padding: 15px;
+    background-color: #007BFF;
+    color: #f7f3f3;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 50px; /* Add this to move it downward */
+}
+
+
+th, td {
+    border: 1px solid #B3E0FF;
+    padding: 12px 15px;
+}
+
+th {
+    background-color: #EAF7FF;
+    color: #333;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    margin: 0 3px;
+    color: black;
+    border: 1px solid #007BFF;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+footer {
+    background-color: #007BFF;
+    color: #f7f3f3;
+    padding: 10px 30px;
+    text-align: center;
+    box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+footer div, footer p {
+    clear: both;
+    display: block;
+}
+.post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.search-bar-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar-input[type="text"] {
+    padding: 12px 15px;
+}
+
+textarea.search-bar-input {
+    resize: vertical; /* Allows user to resize textarea vertically */
+}
+
+button {
+    align-self: center;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.post-container {
+    width: 80%;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-author, .post-title, .post-content {
+    margin-bottom: 20px;
+}
+
+.author-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.post-title h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.post-content {
+    font-size: 18px;
+}
+
+.comment-section {
+    margin-top: 30px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+}
+
+.comment {
+    margin-bottom: 20px;
+}
+
+.comment-author {
+    font-weight: bold;
+}
+
+.comment > button {
+    display: block;
+    margin-top: 10px;
+}
+/* ... (Your existing CSS from /WEB-INF/style.css) ... */
+
+.post-time, .comment-time {
+    font-size: 12px;
+    color: #888;
+    margin-left: 10px;
+}
+
+.leave-comment-section {
+    margin-top: 20px;
+}
+
+.leave-comment-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
